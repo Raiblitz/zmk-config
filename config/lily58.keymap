@@ -60,7 +60,7 @@
 &trans    &trans    &trans   &trans     &trans      &trans                          &trans      &trans      &trans    &trans    &trans      &trans
 &trans    &kp EXCL  &kp AT   &kp LPAR   &kp RPAR    &kp PIPE                        &trans      &trans      &kp UP    &trans    &trans      &trans
 &trans    &kp LBRC  &kp RBRC &kp LBKT   &kp RBKT    &kp BSLH                        &trans      &kp LEFT    &kp DOWN  &kp RIGHT &trans      &trans
-&trans    &trans    &trans   &trans     &trans      &trans       &trans   &trans    &kp EQUAL   &kp PLUS    &kp MINUS &kp ASTRK &kp FSLH    &kp BSLH
+&trans    &trans    &trans   &trans     &trans      &trans       &trans   &trans    &kp EQUAL   &kp PLUS    &kp MINUS &kp ASTRK &kp FSLH    &kp DEL
                                         &trans  &trans  &trans  &trans    &trans   &trans    &trans    &trans
             >;                                                                         
 
