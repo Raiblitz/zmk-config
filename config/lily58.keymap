@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+
+    behaviors {
+        sk: sticky_key {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            release-after-ms = <2000>;
+            //quick-release;
+        };
+    };
     
     keymap {
         compatible = "zmk,keymap";
@@ -38,7 +47,7 @@
 &trans     &trans    &trans   &trans     &trans      &trans                               &trans      &trans      &trans    &trans    &trans      &trans
 &kp F1     &kp EXCL  &kp AT   &kp HASH   &kp DOLLAR  &kp PRCNT                            &trans      &kp AMPS    &kp ASTRK &kp LPAR  &kp RPAR    &kp F12
 &kp GRAVE  &kp N1    &kp N2   &kp N3     &kp N4      &kp N5                               &kp N6      &kp N7      &kp N8    &kp N9    &kp N0      &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &trans      &trans      &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans       &trans      &kp MINUS   &kp PLUS  &kp LBRC  &kp RBRC    &kp PIPE
                                               &trans            &trans       &trans       &trans  &trans      &trans    &trans    &trans
             >;
 
@@ -51,7 +60,7 @@
 &trans    &trans    &trans   &trans     &trans      &trans                          &trans      &trans      &trans    &trans    &trans      &trans
 &trans    &kp EXCL  &kp AT   &kp LPAR   &kp RPAR    &kp PIPE                        &trans      &trans      &kp UP    &trans    &trans      &trans
 &trans    &kp LBRC  &kp RBRC &kp LBKT   &kp RBKT    &kp BSLH                        &trans      &kp LEFT    &kp DOWN  &kp RIGHT &trans      &trans
-&trans    &trans    &trans   &trans     &trans      &trans       &trans   &trans    &kp EQUAL   &kp PLUS    &kp MINUS &kp ASTRK &kp FLSH    &kp BSLH
+&trans    &trans    &trans   &trans     &trans      &trans       &trans   &trans    &kp EQUAL   &kp PLUS    &kp MINUS &kp ASTRK &kp FSLH    &kp BSLH
                                         &trans  &trans  &trans  &trans    &trans   &trans    &trans    &trans
             >;                                                                         
 
